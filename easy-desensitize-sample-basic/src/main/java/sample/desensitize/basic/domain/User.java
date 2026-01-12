@@ -17,6 +17,17 @@ public class User {
 	@MaskingField(typeHandler = FixedMaskHandler.class)
 	private String password;
 
+	public User() {
+		super();
+	}
+
+	public User(String name, String mobile, String password) {
+		super();
+		this.name = name;
+		this.mobile = mobile;
+		this.password = password;
+	}
+
 	public String getName() {
 		return name;
 	}
