@@ -9,7 +9,7 @@
 	<name>easy-desensitize-samples</name>
 	
 	<modules>
-		<module>esay-desensitize-sample-web</module>
+		<module>easy-desensitize-sample-web</module>
 		<module>easy-desensitize-sample-basic</module>
 	</modules>
 	

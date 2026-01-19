@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>esay-desensitize-sample-web</artifactId>
+	<artifactId>easy-desensitize-sample-web</artifactId>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
