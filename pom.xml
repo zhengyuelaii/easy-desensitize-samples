@@ -11,6 +11,7 @@
 	<modules>
 		<module>easy-desensitize-sample-web</module>
 		<module>easy-desensitize-sample-basic</module>
-	</modules>
+        <module>easy-desensitize-sample-common-result</module>
+    </modules>
 	
 </project>
