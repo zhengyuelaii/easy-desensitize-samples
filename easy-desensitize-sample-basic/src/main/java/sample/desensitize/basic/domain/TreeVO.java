@@ -2,8 +2,8 @@ package sample.desensitize.basic.domain;
 
 import java.util.List;
 
-import com.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
-import com.github.zhengyuelaii.desensitize.core.handler.KeepFirstAndLastHandler;
+import io.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
+import io.github.zhengyuelaii.desensitize.core.handler.KeepFirstAndLastHandler;
 
 public class TreeVO {
 

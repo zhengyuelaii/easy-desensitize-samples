@@ -1,6 +1,6 @@
 package sample.desensitize.basic;
 
-import com.github.zhengyuelaii.desensitize.core.util.Masker;
+import io.github.zhengyuelaii.desensitize.core.util.Masker;
 
 public class MaskerUsageSample {
 

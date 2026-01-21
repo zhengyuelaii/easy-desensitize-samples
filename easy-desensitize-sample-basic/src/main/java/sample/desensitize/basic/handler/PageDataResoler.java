@@ -2,7 +2,7 @@ package sample.desensitize.basic.handler;
 
 import java.util.Iterator;
 
-import com.github.zhengyuelaii.desensitize.core.util.MaskingDataResolver;
+import io.github.zhengyuelaii.desensitize.core.util.MaskingDataResolver;
 
 import sample.desensitize.basic.util.Page;
 

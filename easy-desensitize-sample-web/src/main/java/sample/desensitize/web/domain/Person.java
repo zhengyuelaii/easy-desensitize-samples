@@ -1,6 +1,6 @@
 package sample.desensitize.web.domain;
 
-import com.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
+import io.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
 
 import sample.desensitize.web.handler.NameMaskingHandler;
 

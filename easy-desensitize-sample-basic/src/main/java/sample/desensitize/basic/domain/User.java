@@ -1,8 +1,8 @@
 package sample.desensitize.basic.domain;
 
-import com.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
-import com.github.zhengyuelaii.desensitize.core.handler.FixedMaskHandler;
-import com.github.zhengyuelaii.desensitize.core.handler.KeepFirstAndLastHandler;
+import io.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
+import io.github.zhengyuelaii.desensitize.core.handler.FixedMaskHandler;
+import io.github.zhengyuelaii.desensitize.core.handler.KeepFirstAndLastHandler;
 
 import sample.desensitize.basic.handler.MobileMaskingHandler;
 

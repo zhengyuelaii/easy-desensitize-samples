@@ -1,7 +1,7 @@
 package sample.desensitize.common.result.handler;
 
-import com.github.zhengyuelaii.desensitize.core.handler.MaskingHandler;
-import com.github.zhengyuelaii.desensitize.core.util.Masker;
+import io.github.zhengyuelaii.desensitize.core.handler.MaskingHandler;
+import io.github.zhengyuelaii.desensitize.core.util.Masker;
 
 /**
  * 手机号脱敏

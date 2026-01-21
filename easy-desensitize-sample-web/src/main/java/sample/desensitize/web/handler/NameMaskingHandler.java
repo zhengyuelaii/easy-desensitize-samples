@@ -1,7 +1,7 @@
 package sample.desensitize.web.handler;
 
-import com.github.zhengyuelaii.desensitize.core.handler.MaskingHandler;
-import com.github.zhengyuelaii.desensitize.core.util.Masker;
+import io.github.zhengyuelaii.desensitize.core.handler.MaskingHandler;
+import io.github.zhengyuelaii.desensitize.core.util.Masker;
 
 public class NameMaskingHandler implements MaskingHandler {
 

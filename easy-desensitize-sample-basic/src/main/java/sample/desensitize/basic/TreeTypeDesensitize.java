@@ -2,7 +2,7 @@ package sample.desensitize.basic;
 
 import java.util.Arrays;
 
-import com.github.zhengyuelaii.desensitize.core.EasyDesensitize;
+import io.github.zhengyuelaii.desensitize.core.EasyDesensitize;
 
 import sample.desensitize.basic.domain.TreeVO;
 

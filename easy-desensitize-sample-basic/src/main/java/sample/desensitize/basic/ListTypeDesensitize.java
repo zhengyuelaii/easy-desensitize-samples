@@ -3,7 +3,7 @@ package sample.desensitize.basic;
 import java.util.Collections;
 import java.util.List;
 
-import com.github.zhengyuelaii.desensitize.core.EasyDesensitize;
+import io.github.zhengyuelaii.desensitize.core.EasyDesensitize;
 
 import sample.desensitize.basic.domain.User;
 
