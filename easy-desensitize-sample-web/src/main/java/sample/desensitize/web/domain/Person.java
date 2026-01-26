@@ -2,6 +2,8 @@ package sample.desensitize.web.domain;
 
 import io.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
 
+import sample.desensitize.web.handler.IdNumberMaskingHandler;
+import sample.desensitize.web.handler.MobileMaskingHandler;
 import sample.desensitize.web.handler.NameMaskingHandler;
 
 public class Person {
@@ -9,8 +11,10 @@ public class Person {
 	@MaskingField(typeHandler = NameMaskingHandler.class)
 	private String name;
 
+	@MaskingField(typeHandler = MobileMaskingHandler.class)
 	private String mobile;
 
+	@MaskingField(typeHandler = IdNumberMaskingHandler.class)
 	private String idNumber;
 
 	public String getName() {
