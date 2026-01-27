@@ -1,6 +1,6 @@
 package sample.desensitize.web.controller;
 
-import com.github.zhengyuelaii.desensitize.autoconfigure.ResponseMasking;
+import io.github.zhengyuelaii.desensitize.autoconfigure.ResponseMasking;
 import io.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
 import io.github.zhengyuelaii.desensitize.core.handler.KeepFirstAndLastHandler;
 import org.springframework.web.bind.annotation.GetMapping;

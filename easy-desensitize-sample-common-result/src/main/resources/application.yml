@@ -3,3 +3,7 @@ server:
 
 spring:
   name: spring-boot-demo
+
+easy:
+  desensitize:
+    enabled: true

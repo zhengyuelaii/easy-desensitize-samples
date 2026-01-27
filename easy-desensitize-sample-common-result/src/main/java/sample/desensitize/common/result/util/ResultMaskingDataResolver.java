@@ -1,6 +1,6 @@
 package sample.desensitize.common.result.util;
 
-import com.github.zhengyuelaii.desensitize.autoconfigure.AbstractMaskingDataResolver;
+import io.github.zhengyuelaii.desensitize.autoconfigure.AbstractMaskingDataResolver;
 
 /**
  *
