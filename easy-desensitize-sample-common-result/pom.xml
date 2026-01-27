@@ -30,7 +30,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.zhengyuelaii.desensitize</groupId>
+            <groupId>io.github.zhengyuelaii</groupId>
             <artifactId>easy-desensitize-spring-boot-starter</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
