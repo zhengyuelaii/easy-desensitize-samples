@@ -1,11 +1,10 @@
 package sample.desensitize.web.config;
 
-import io.github.zhengyuelaii.desensitize.autoconfigure.EasyDesensitizeInterceptor;
+import io.github.zhengyuelaii.desensitize.interceptor.EasyDesensitizeInterceptor;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 
-import java.util.List;
 import java.util.Objects;
 
 /**

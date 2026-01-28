@@ -1,6 +1,6 @@
 package sample.desensitize.common.result.config;
 
-import io.github.zhengyuelaii.desensitize.autoconfigure.AbstractMaskingDataResolver;
+import io.github.zhengyuelaii.desensitize.resolver.AbstractMaskingDataResolver;
 import io.github.zhengyuelaii.desensitize.core.util.MaskingDataResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

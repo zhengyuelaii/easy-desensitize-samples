@@ -1,7 +1,7 @@
 package sample.desensitize.web.controller;
 
-import io.github.zhengyuelaii.desensitize.autoconfigure.IgnoreResponseMasking;
-import io.github.zhengyuelaii.desensitize.autoconfigure.ResponseMasking;
+import io.github.zhengyuelaii.desensitize.annotation.IgnoreResponseMasking;
+import io.github.zhengyuelaii.desensitize.annotation.ResponseMasking;
 import io.github.zhengyuelaii.desensitize.core.annotation.MaskingField;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
