@@ -1,5 +1,6 @@
 package sample.desensitize.web.config;
 
+import io.github.zhengyuelaii.desensitize.interceptor.DesensitizeInterceptorRegistry;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,8 +15,13 @@ import org.springframework.context.annotation.Configuration;
 public class MyConfig {
 
     @Bean
-    public MyDesensitizeInterceptor myDesensitizeInterceptor() {
-        return new MyDesensitizeInterceptor();
+    public DesensitizeInterceptorRegistry desensitizeInterceptorRegistry() {
+        DesensitizeInterceptorRegistry registry = new DesensitizeInterceptorRegistry();
+        registry.addInterceptor(new MyDesensitizeInterceptor())
+                .addPathPatterns("/person/**");
+        registry.addInterceptor(new NameExcludeInterceptor())
+                .addPathPatterns("/user/**");
+        return registry;
     }
 
 }
