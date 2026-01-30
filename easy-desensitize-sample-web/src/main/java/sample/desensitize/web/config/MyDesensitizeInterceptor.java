@@ -1,5 +1,7 @@
 package sample.desensitize.web.config;
 
+import io.github.zhengyuelaii.desensitize.advice.ResponseMaskingContext;
+import io.github.zhengyuelaii.desensitize.advice.ResponseMaskingDefinition;
 import io.github.zhengyuelaii.desensitize.interceptor.EasyDesensitizeInterceptor;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.server.ServerHttpRequest;
@@ -17,13 +19,13 @@ import java.util.Objects;
 public class MyDesensitizeInterceptor implements EasyDesensitizeInterceptor {
 
     @Override
-    public boolean preHandle(Object body, MethodParameter returnType, ServerHttpRequest request, ServerHttpResponse response) {
+    public boolean preHandle(Object body, ResponseMaskingContext context, MethodParameter returnType, ServerHttpRequest request, ServerHttpResponse response) {
         String userId = request.getHeaders().getFirst("x-user-id");
         return !Objects.equals("1", userId);
     }
 
     @Override
-    public void postHandle(Object body, MethodParameter returnType, ServerHttpRequest request, ServerHttpResponse response) {
+    public void postHandle(Object body, ResponseMaskingContext context, MethodParameter returnType, ServerHttpRequest request, ServerHttpResponse response) {
         System.out.println(body);
     }
 
