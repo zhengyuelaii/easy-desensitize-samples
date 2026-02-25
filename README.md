@@ -31,7 +31,6 @@
 </dependency>
 ```
 ### 2.2 规则标注
-通过在实体类字段上添加 @MaskingField 注解，开发者可以精确定义脱敏策略。例如，使用 KeepFirstAndLastHandler 保留首尾字符，或通过 FixedMaskHandler 进行全遮蔽。
 
 定义脱敏处理器
 ```java
@@ -59,6 +58,9 @@ public class User {
     // getter、setter 略
 }
 ```
+> 通过在实体类字段上添加 @MaskingField 注解，开发者可以精确定义脱敏策略。
+
+
 执行脱敏
 
 ```java
@@ -78,7 +80,7 @@ public class QuickStart {
 
 
 ## 3. 复杂对象支持
-在实际业务中，数据往往以 Result<T> 或嵌套列表的形式存在。easy-desensitize 在处理这类复杂结构时表现出了两项关键技术优势：
+在实际业务中，数据往往以 Result<T> 或嵌套列表的形式存在。`easy-desensitize`在处理这类复杂结构时表现出了关键技术优势。
 
 * List脱敏
 
