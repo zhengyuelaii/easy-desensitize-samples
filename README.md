@@ -202,7 +202,7 @@ public class ResultDesensitize {
 </dependency>
 ```
 
-### 2. 创建实体类
+### 4.2 创建实体类
 
 在字段上使用 @MaskingField 定义脱敏策略。
 
@@ -221,7 +221,7 @@ public class User {
     // getter/setter
 }
 ```
-### 3. 在Controller启用脱敏
+### 4.3 在Controller启用脱敏
 
 在 **方法或类** 上添加 @ResponseMasking 注解。
 
