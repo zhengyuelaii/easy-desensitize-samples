@@ -186,7 +186,7 @@ public class ResultDesensitize {
 }
 ```
 
-项目仓库： https://github.com/zhengyuelaii/easy-desensitize-core
+项目仓库： [easy-desensitize-core](https://github.com/zhengyuelaii/easy-desensitize-core)
 
 ## 4. 与 Spring 集成
 
@@ -249,9 +249,9 @@ public class UserController {
 }
 ```
 
-项目仓库： https://github.com/zhengyuelaii/easy-desensitize-spring-boot-starter
+项目仓库： [easy-desensitize-spring-boot-starter](https://github.com/zhengyuelaii/easy-desensitize-spring-boot-starter)
 
 ## 总结
 从实测结果看，easy-desensitize 不仅仅是一个简单的注解工具，它更像是一个经过精细调优的性能引擎。对于追求高吞吐量、且需处理复杂对象模型的 Java 应用，它提供了一个高性能且低侵入的标准化方案。
 
-测试代码：https://github.com/zhengyuelaii/easy-desensitize-samples
+测试代码：[easy-desensitize-samples](https://github.com/zhengyuelaii/easy-desensitize-samples)
