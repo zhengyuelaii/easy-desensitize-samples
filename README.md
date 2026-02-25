@@ -1,8 +1,16 @@
-# Easy Desensitize：Java 脱敏引擎的试用与实测
+# Easy Desensitize：Java 高性能脱敏引擎的试用与实测
 
 在企业级应用开发中，数据脱敏是合规性的刚需。然而，开发者往往在“功能完整性”与“系统性能”之间面临权衡：基于 AOP 的方案难以穿透复杂的嵌套对象（如 List<Map>），而基于 Jackson 序列化的方案又难以应用于非 Web 输出场景（如 Excel 导出、日志记录）。
 
 开源项目 easy-desensitize 提供了一个值得关注的解法。该框架通过精简的反射缓存架构，在保证深度递归处理的同时，将损耗压制在了纳秒级别。
+
+## 核心特性
+
+- **高性能**：基于反射缓存的零拷贝架构，性能损耗极低
+- **全场景支持**：兼容 Web API、Excel 导出、日志记录等多种使用场景
+- **智能识别**：自动处理 List、Map、数组及多层嵌套对象
+- **灵活扩展**：支持自定义脱敏策略和处理器
+- **无缝集成**：提供 Spring Boot Starter，一键开启全局脱敏
 
 ## 1. 概述
 `easy-desensitize-core`是一个独立于业务逻辑的`Java`脱敏引擎。其核心价值在于提供了一套结构自适应的脱敏机制。
@@ -19,7 +27,7 @@
 <dependency>
     <groupId>io.github.zhengyuelaii</groupId>
     <artifactId>easy-desensitize-core</artifactId>
-    <version>1.0.0</version>
+    <version>${latest.version}</version> <!-- 使用变量替换最新版本 -->
 </dependency>
 ```
 ### 2.2 规则标注
@@ -122,7 +130,7 @@ public class TreeVO {
    @MaskingField(typeHandler = KeepFirstAndLastHandler.class)
    private String name;
    private List<TreeVO> children;
-   ...
+   // ...
 }
 
 public class TreeTypeDesensitize {
@@ -188,7 +196,7 @@ public class ResultDesensitize {
 <dependency>
     <groupId>io.github.zhengyuelaii</groupId>
     <artifactId>easy-desensitize-spring-boot-starter</artifactId>
-    <version>${latest.version}</version>
+    <version>${latest.version}</version> <!-- 使用变量替换最新版本 -->
 </dependency>
 ```
 
